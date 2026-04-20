@@ -158,3 +158,64 @@ a:hover {
     background-color: #2a2a2a;
     transform: scale(1.03);
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+}
+
+.logo a {
+    color: #ff8800;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a {
+    margin-left: 15px;
+    color: #ccc;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: white;
+}
+
+.requirements {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.requirements strong {
+    display: block;
+    margin-bottom: 5px;
+    color: #ccc;
+}
+
+/* tags dos farms */
+
+.speed {
+    background-color: #dad612b6;
+}
+
+.high {   
+     background-color: #18a754b6;
+}
+
+/* tags que as builds precisam */
+
+.mobility {
+    background-color: #08b4eed2;
+}
+
+.clear {
+    background-color: #9b2a46;
+}
+
+.squishy {
+    background-color: #c54435;
+}
