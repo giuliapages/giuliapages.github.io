@@ -27,16 +27,28 @@ icons.forEach(icon => {
 
 });
 
-// Adicionado Delay
-let timeout;
+// Delay Ativo
+icons.forEach(icon => {
 
-icon.addEventListener("mouseenter", () => {
-  timeout = setTimeout(() => {
-    tooltip.style.display = "block";
-  }, 200);
-});
+  const tooltip = document.getElementById(icon.dataset.tooltip);
+  if (!tooltip) return;
 
-icon.addEventListener("mouseleave", () => {
-  clearTimeout(timeout);
-  tooltip.style.display = "none";
+  let timeout;
+
+  icon.addEventListener("mouseenter", () => {
+    timeout = setTimeout(() => {
+      tooltip.style.display = "block";
+    }, 200);
+  });
+
+  icon.addEventListener("mouseleave", () => {
+    clearTimeout(timeout);
+    tooltip.style.display = "none";
+  });
+
+  icon.addEventListener("mousemove", (e) => {
+    tooltip.style.top = e.pageY + 10 + "px";
+    tooltip.style.left = e.pageX + 10 + "px";
+  });
+
 });
