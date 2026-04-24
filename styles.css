@@ -219,10 +219,6 @@ nav a:hover {
           TAGS
 ========================= */
 
-/* =========================
-          TAGS
-========================= */
-
 .tags {
   margin-bottom: 10px;
 }
@@ -266,10 +262,15 @@ nav a:hover {
        FARM CARD
 ========================= */
 
+.card-main {
+  flex: 1;
+}
+
 .farm-card {
   display: flex;
   gap: 20px;
   padding: 20px;
+  align-items: stretch;
   background: linear-gradient(145deg, #141414, #0f0f0f);
   border-radius: 12px;
   margin-top: 30px;
@@ -281,6 +282,7 @@ nav a:hover {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex: 0 0 220px;
 
   border-left: 1px solid rgba(255,136,0,0.2);
   padding-left: 15px;
